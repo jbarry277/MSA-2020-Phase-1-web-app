@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MediaCard from '/Users/joe/Desktop/my-app/src/Components/MediaCard';
+import MediaCard from '../MediaCard';
 import { Grid } from '@material-ui/core';
 import './MediaGrid.css';
 
