@@ -48,7 +48,7 @@ function SearchBar(props: ISearchBarProps) {
         <Grid container spacing = {3}>
             <Grid item xs={6} sm={3}>
                 <TextField
-                    required
+                    
                     id="outlined-required"
                     label="Search"
                     variant="outlined"
@@ -57,40 +57,7 @@ function SearchBar(props: ISearchBarProps) {
                     value={SearchQuery}
                     onChange={e => handleSearchQueryChange(e.target.value)}
                 />
-            </Grid>
-            <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                 <Grid item xs={6} sm={3}>
-                     <KeyboardDatePicker
-                         disableToolbar
-                         variant="inline"
-                         format="MM/dd/yyyy"
-                         margin="normal"
-                         id="StartDate"
-                         label="Start Date (optional)"
-                         value={StartDate}
-                         onChange={handleStartDateChange}
-                         KeyboardButtonProps={{
-                             'aria-label': 'change date',
-                         }}
-                     />
-                 </Grid>
-                 <Grid item xs={6} sm={3}>
-                     <KeyboardDatePicker
-                         disableToolbar
-                         variant="inline"
-                         format="MM/dd/yyyy"
-                         margin="normal"
-                         id="EndData"
-                         label="End Date (optional)"
-                         value={EndDate}
-                         onChange={handleEndDateChange}
-                         KeyboardButtonProps={{
-                             'aria-label': 'change date',
-                         }}
-                     />
-                 </Grid>
-             </MuiPickersUtilsProvider>
-             <Grid item xs={6} sm={3}>
+
                <Button variant="contained" color="primary" onClick={handleSubmit}>
                    Submit
                </Button>
