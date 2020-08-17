@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import './SearchBar.css';
 import { Button, Grid, TextField } from '@material-ui/core';
 import { KeyboardDatePicker, MuiPickersUtilsProvider } from '@material-ui/pickers';
-import { IUserInput } from '/Users/joe/Desktop/my-app/src/Common/interfaces';
+import { IUserInput } from '../../../src/Common/interfaces';
 import DateFnsUtils from '@date-io/date-fns';
 
 
@@ -48,7 +48,7 @@ function SearchBar(props: ISearchBarProps) {
         <Grid container spacing = {3}>
             <Grid item xs={6} sm={3}>
                 <TextField
-                    
+
                     id="outlined-required"
                     label="Search"
                     variant="outlined"
